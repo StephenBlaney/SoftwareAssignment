@@ -1,0 +1,114 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=27960, tid=27996
+#
+# JRE version:  (8.0_60-b27) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.60-b23 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000021a0800):  JavaThread "Unknown thread" [_thread_in_vm, id=27996, stack(0x00000000020a0000,0x00000000021a0000)]
+
+Stack: [0x00000000020a0000,0x00000000021a0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000021a0800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=27996, stack(0x00000000020a0000,0x00000000021a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7ac7f0000 - 0x00007ff7ac827000 	C:\Program Files\Java\jre1.8.0_60\bin\javaw.exe
+0x00007ffd51060000 - 0x00007ffd51221000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd50a20000 - 0x00007ffd50acd000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffd4d8b0000 - 0x00007ffd4da98000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffd50df0000 - 0x00007ffd50e97000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffd50ba0000 - 0x00007ffd50c3d000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffd50ad0000 - 0x00007ffd50b2b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ffd50000000 - 0x00007ffd5011c000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffd50ea0000 - 0x00007ffd50ff6000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffd50c40000 - 0x00007ffd50dc6000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffd45a40000 - 0x00007ffd45cb4000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+0x00007ffd4fcc0000 - 0x00007ffd4ff3d000 	C:\WINDOWS\system32\combase.dll
+0x00007ffd4d710000 - 0x00007ffd4d77a000 	C:\WINDOWS\system32\bcryptPrimitives.dll
+0x00007ffd4f9c0000 - 0x00007ffd4f9fb000 	C:\WINDOWS\system32\IMM32.DLL
+0x00000000776c0000 - 0x0000000077792000 	C:\Program Files\Java\jre1.8.0_60\bin\msvcr100.dll
+0x0000000050750000 - 0x0000000050fd9000 	C:\Program Files\Java\jre1.8.0_60\bin\server\jvm.dll
+0x00007ffd50dd0000 - 0x00007ffd50dd8000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffd4b640000 - 0x00007ffd4b649000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd502f0000 - 0x00007ffd5035b000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffd4bca0000 - 0x00007ffd4bcc3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd43560000 - 0x00007ffd4356a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd4bc70000 - 0x00007ffd4bc9c000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffd4e410000 - 0x00007ffd4e453000 	C:\WINDOWS\system32\cfgmgr32.dll
+0x0000000053660000 - 0x000000005366f000 	C:\Program Files\Java\jre1.8.0_60\bin\verify.dll
+0x00000000531c0000 - 0x00000000531e9000 	C:\Program Files\Java\jre1.8.0_60\bin\java.dll
+0x00000000531a0000 - 0x00000000531b6000 	C:\Program Files\Java\jre1.8.0_60\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: ProjectGui
+java_class_path (initial): C:\Users\Stephen Blaney\workspace\SoftwareProject\bin
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_60/bin/server;C:/Program Files/Java/jre1.8.0_60/bin;C:/Program Files/Java/jre1.8.0_60/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk8\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\doxygen\bin;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\System32;
+USERNAME=Stephen Blaney
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 55 Stepping 8, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 10586 (10.0.10586.0)
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 55 stepping 8, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, clmul, erms, 3dnowpref, tsc, tscinvbit
+
+Memory: 4k page, physical 4078472k(578216k free), swap 16661384k(5272k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.60-b23) for windows-amd64 JRE (1.8.0_60-b27), built on Aug  4 2015 11:06:27 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Mar 12 17:50:52 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
